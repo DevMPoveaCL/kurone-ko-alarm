@@ -1,0 +1,50 @@
+name: kurone_ko_alarm
+description: "Offline break alarm import for Kurone-ko — schedule alarms from images and Excel sheets."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Local database
+  drift: ^2.22.1
+  sqlite3_flutter_libs: ^0.5.28
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+  # OCR
+  google_mlkit_text_recognition: ^0.14.0
+  image: ^4.3.0
+
+  # Excel parsing
+  excel: ^4.0.3
+
+  # File picking
+  file_picker: ^8.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code generation
+  build_runner: ^2.4.14
+  riverpod_generator: ^2.6.4
+  drift_dev: ^2.22.1
+
+  # Testing
+  mocktail: ^1.0.4
+  sqlite3: ^2.9.4
+
+flutter:
+  uses-material-design: true
